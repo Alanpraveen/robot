@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{
+            margin-left: 200px;
+            font-style:normal;
+            color: black;
+    
+        }
+        .m{
+            height: 500px;
+            width: 500px;
+            border: 8px double black;
+            background-color: rgb(9, 31, 9);
+        
+            
+    
+        }
+     .head{
+        height: 100px;
+        width: 120px;
+        background:radial-gradient(gray,rgb(173, 173, 186));
+        border: 3px ridge black;
+        border-radius: 100px;
+        position: absolute;
+        left: 200px;
+        top: 155px;animation-name:head ;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes head {
+            0%{ 
+            transition-duration: 5s;
+            transition-timing-function:cubic-bezier(0.645, 0.045, 0.355, 1);
+            transform:rotatey(20deg);
+        }
+} 
+ .LE{
+    height: 20px;
+    width: 20px;
+    border: 3px solid black;
+    border-radius: 100%;
+    background:radial-gradient(silver,rgb(227, 19, 19));
+    position: absolute;
+    left: 215px;
+    top: 200px;
+    }
+ .RE{
+    height:20px;
+    width: 20px;
+    border: 3px solid black;
+    background:radial-gradient(silver,rgb(184, 24, 24));
+    border-radius: 100%;
+    position: absolute;
+    top:200px;
+    left: 280px;
+ }
+  .body{
+    height: 160px;
+        width: 135px;
+        border: 5px ridge black;
+        background:radial-gradient(lightsteelblue,silver);
+        border-radius: 40px;
+        position: absolute;
+        top: 270px;
+        left: 195px;
+ } 
+ .LH{
+    height: 35px;
+    width: 110px;
+    background:radial-gradient(red,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    animation-name:Lhand ;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+ }
+    @keyframes Lhand {
+            0%{ 
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transform: rotate(360deg);
+        }
+ }
+ .RH{
+    height: 35px;
+    width: 110px;
+    background:radial-gradient(red,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 270px;
+    left: 325px;
+    animation-name:Lhand ;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+ }
+    @keyframes Lhand {
+            0%{ 
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transform: rotate(360deg);
+        }
+ }
+ .LL{
+    height: 120px;
+    width: 40px;
+    background: radial-gradient(red,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 400px;
+    left: 195px;
+    animation-name:LLeg ;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes LLeg {
+            0%{ 
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transform: rotate(360deg);
+        }
+ }
+ .RL{
+    height: 120px;
+    width: 40px;
+    background: radial-gradient(red,black);
+    border-radius: 20px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    animation-name:LLeg ;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes LLeg {
+            0%{ 
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transform:rotateX(70deg);
+            transform:rotate(70deg);
+            transform: rotate(70deg);
+        }
+ }
+    </style>
+</head>
+<body>
+    <h1 class="h"><b>Robot</b></h1>
+    <div class="m">
+    <div class="head"></div>
+    <div class="LE"></div>
+    <div class="RE"></div>
+    <div class="body"></div>
+    <div class="LH"></div>
+    <div class="RH"></div>
+    <div class="LL"></div>
+    <div class="RL"></div>
+
+
+    </div>
+</body>
+</html>
